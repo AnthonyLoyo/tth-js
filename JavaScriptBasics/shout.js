@@ -9,22 +9,22 @@
 
 // Guils Solution:
 
-// const stringToBeShouted = prompt("What do you want to scream?"); //
+const stringToBeShouted = prompt("What do you want to scream?"); 
 // in this variable we take the user input we recived from
 // 'stringstobeshouted' and added the method 'toUpperCase()' to manipulate
 // its format and stored in the variable shout
-// const shout = stringToBeShouted.toUpperCase(); //
+const shout = stringToBeShouted.toUpperCase(); 
 // in ths variable we use templae literals to avoid doing concatnation
 // instead we create anpther variable and use template literals instead
 // to insert directly what we would like our string to say 
 // we also use the method '${ }' to insert the information we manipulated
 // in rhe variable shout
-// const shouting = `<h2>I want to scream ${shout} at the top of my lungs</h2>`; //
+const shouting = `<h2>I want to scream ${shout} at the top of my lungs</h2>`; //
 // here we use the method 'document.querySelector().innerHTML' to select 
 // a tag from our HTML to push the information we have stored in the  
 // shouting variable on to.
   
-// document.querySelector("main").innerHTML = shouting; //
+document.querySelector("main").innerHTML = shouting; //
 
 
 // In this pop quiz we had to make a sentence appear on the page 

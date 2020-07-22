@@ -17,17 +17,44 @@
 
 // 6) Output results to the <main> element
 
-
+// this is my solution for the quiz, it is completed 4/5
 let correctAnswer = 0;
 
-let playerRank = "";
+let playerRank = " ";
 
-let questionOne = prompt("What does HTML stand for?");
 
-let questionTwo = prompt("What does CSS stand for?");
+let questionOne = prompt("What is short for Hyper Text Markup Language?");
+
+    if( questionOne.toUpperCase() === "HTML" ) {
+        correctAnswer += 1;
+    }
+
+let questionTwo = prompt("What is short for Cascading Styel Sheets?");
+
+    if( questionTwo.toUpperCase() === "CSS" ) {
+        correctAnswer += 1;
+    }
 
 let questionThree = prompt("What is Bootstrap?");
 
+    if( questionThree.toUpperCase() === "A FRAMEWORK" ) {
+        correctAnswer += 1;
+    }
+
 let questionFour = prompt("Are Java and JavaScript the same?");
 
+    if( questionFour.toUpperCase() === "NO" ){
+        correctAnswer += 1;
+    }
+
 let questionFive = prompt("Who created JavaScript?");
+
+    if( questionFive.toUpperCase() === "BRENDAN EICH" ) {
+        correctAnswer += 1;
+    }
+
+
+
+let currentScore = `<h2>Number of correct answer ${correctAnswer}</h2>`;
+
+document.querySelector("main").innerHTML = currentScore;
