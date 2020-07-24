@@ -50,6 +50,12 @@
 //score = score / 2;  // score /+ 2;
 
 
+// ------------------------------------------------------------------------
+
+
+// Exercise one:
+// find out how many seconds there are in a day
+
 const secsPermin = 60;
 const minPerHour = 60;
 const hourPerDay = 24;
@@ -60,10 +66,24 @@ const secondsPerDay = secsPermin * minPerHour * hourPerDay;
 
 console.log(`There are ${secondsPerDay} seconds in a day.`);
 
-// challenge
+
+
+
+
+
+// challenge: find out how many seconds you have been alive
+// I created 2 new variables. One to hold the amount of years i have been 
+// alive and one to hold the amount of days in a year.
+// in the previus exercise we calculated the amount of seconds per day
+// then i took that variable and multiplied against the other 2 created variables
+// and thats how i got my solution the second exercise
+
+
+/*const daysPerYear = 365;
+
 const yearsAlive = 30;
 
-const secondsAlive = secsPermin * 
+const secondsAlive = secondsPerDay * daysPerYear * yearsAlive;
 
 
-console.log(`Ive been alive for more than X seconds`)
+console.log(`Ive been alive for more than ${secondsAlive} seconds`)*/
