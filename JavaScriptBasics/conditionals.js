@@ -9,11 +9,11 @@
 
 // EXAMPLE: 
 
-// if(/* CONDITION */ ) {
-//     /*CODE BLOCK 1 */
-// } else {
-//     /* CODE BLOCK 2 */
-// };
+if(/* CONDITION */) {
+    /*CODE BLOCK 1 */
+} else {
+    /* CODE BLOCK 2 */
+};
 
 //---------------------------------------------------------------------------
 
@@ -27,13 +27,13 @@
 // also known as code block 2.
 
 // Example:
-// const answer = prompt("which planet is closest to the sun?");
+/*const answer = prompt("which planet is closest to the sun?");
 
-// if( answer === 'Mercury') {
-//     console.log("thats correct!");
-// } else {
-//     console.log("Try Again")
-// }
+if( answer === 'Mercury') {
+    console.log("thats correct!");
+} else {
+    console.log("Try Again")
+}*/
 
 // Exercise 2:
 // When we enter 'mercury' it comes back as false eventhpugh it is true 
@@ -49,10 +49,10 @@
 // the user answer becomes 'true true' to our answer
 
 // Example:
-// const answer = prompt("Which planet is closest to the sun?");
+/*const answer = prompt("Which planet is closest to the sun?");
 
-// if(answer.toUpperCase() === "MERCURY") {
-//     console.log("Good Job")
-// } else {
-//     console.log("try again!")
-// };
+if(answer.toUpperCase() === "MERCURY") {
+    console.log("Good Job")
+} else {
+    console.log("try again!")
+};*/

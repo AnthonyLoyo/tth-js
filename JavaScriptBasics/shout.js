@@ -38,12 +38,12 @@ document.querySelector("main").innerHTML = shouting; //
 
 
 // Examaple:
-// const color = prompt(" What is your favorite color?");
-// const pet = prompt(" What would be your ideal pet ?")
-// const name = prompt("What would you name your pet?")
+/*const color = prompt(" What is your favorite color?");
+const pet = prompt(" What would be your ideal pet ?")
+const name = prompt("What would you name your pet?")
 
-// const story = `<p> Before you walked your pet ${pet} name ${name} to the back yard
-//  you put on his favorite ${color} jacket. </p>`;
+const story = `<p> Before you walked your pet ${pet} name ${name} to the back yard
+ you put on his favorite ${color} jacket. </p>`;
 
-// document.querySelector("main").innerHTML = story;
+document.querySelector("main").innerHTML = story;*/
 

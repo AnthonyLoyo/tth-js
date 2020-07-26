@@ -20,7 +20,7 @@
 
 // Loyo's Solution:
 
-let correctAnswer = 0;
+/*let correctAnswer = 0;
 
 let playerRank = " ";
 
@@ -73,12 +73,12 @@ let finalScore = `<h2>Number of correct answer ${correctAnswer}</h2>`;
 document.querySelector("h2").innerHTML = finalScore;
 
 let finalRank = `<p> Final rank is ${playerRank}</p>`;
-document.querySelector("p").innerHTML = finalRank;
+document.querySelector("p").innerHTML = finalRank;*/
 
 
 // Guils Solution:
 
-let correct = 0;
+/*let correct = 0;
 
 let rank;
 
@@ -122,4 +122,4 @@ if(correct === 5){
 main.innerHTML = `
     <h2> you got ${correct} out of 5 questions correct. </h2>
     <p>Crown earnder: ${rank}</p>
-`;
+`;*/

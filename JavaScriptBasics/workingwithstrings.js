@@ -7,10 +7,10 @@
 // use a backslash to continue the sring on the next line.
 
 // Example:
-// const multiline = "Hello, students \
-// Welcome to JavaScript basics. \
-// I hope you learn a lot" ;
-// console.log( multiline );
+/*const multiline = "Hello, students \
+Welcome to JavaScript basics. \
+I hope you learn a lot" ;
+console.log( multiline );*/
 
 
 
@@ -19,8 +19,8 @@
 // name when running it through 'console.log'.
 
 // Example:
-// const passphrase = "Hi";
-// console.log( passphrase.length )
+/*const passphrase = "Hi";
+console.log( passphrase.length )*/
 
 
 
@@ -28,12 +28,12 @@
 // to manipulate information inside of a string.
 
 // Example:
-// const lowercase = "I HAVE SPOKEN";
-// console.log( lowercase.toLowerCase() );
+/*const lowercase = "I HAVE SPOKEN";
+console.log( lowercase.toLowerCase() );*/
 
 // Example:
-// const uppercase = "i have spoken";
-// console.log( uppercase.toUpperCase() )
+/*const uppercase = "i have spoken";
+console.log( uppercase.toUpperCase() )*/
 
 
 
@@ -43,12 +43,12 @@
 // 'hello message'.
 
 // Example:
-// const name = prompt("what is your name?")
-// let message = "Hello " + name + ", Welcome to my site.";
-// message += "I'm so happy you came by to visit, ";
-// message += name;
-// message =+ ". feel free to visit anytme." 
-// console.log( message ); 
+/*const name = prompt("what is your name?")
+let message = "Hello " + name + ", Welcome to my site.";
+message += "I'm so happy you came by to visit, ";
+message += name;
+message =+ ". feel free to visit anytme." 
+console.log( message );*/ 
 
 
 // template literal can be used to feed info
@@ -59,9 +59,9 @@
 // give and or use to your varible.
 
 // Example:
-// const name = prompt('what is your name?');
-// const message = `Hello ${name}`;
-// console.log( message )
+/*const name = prompt('what is your name?');
+const message = `Hello ${name}`;
+console.log( message )*/
 
 
 

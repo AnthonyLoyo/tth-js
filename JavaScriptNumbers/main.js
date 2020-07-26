@@ -56,7 +56,7 @@
 // Exercise one:
 // find out how many seconds there are in a day
 
-const secsPermin = 60;
+/*const secsPermin = 60;
 const minPerHour = 60;
 const hourPerDay = 24;
 const daysPerWeek = 7;
@@ -64,7 +64,7 @@ const weeksPerYear = 52;
 
 const secondsPerDay = secsPermin * minPerHour * hourPerDay;
 
-console.log(`There are ${secondsPerDay} seconds in a day.`);
+console.log(`There are ${secondsPerDay} seconds in a day.`);*/
 
 
 

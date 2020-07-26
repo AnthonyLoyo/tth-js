@@ -11,7 +11,7 @@
 
 
 // Example: 
-const guessaNumber = prompt("Guess a number between 1 - 10")
+/*const guessaNumber = prompt("Guess a number between 1 - 10")
 
 let userGuess = false;
 
@@ -27,5 +27,5 @@ if( userGuess === true ) {
     console.log("You guessed the number correctly")
 } else {
     console.log(`Sorry the number was ${correctNumber}!`)
-}
+}*/
 

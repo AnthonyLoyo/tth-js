@@ -7,7 +7,7 @@
 // our variable is then ran through our if statment and tested against mulitple conditions using the else if clause.
 // the weather variable is then tested against the  if, else if and else statements conditionals. once one of the conditionals in the if, else if or else statements is strictly matched to the value inside weather it excutes that code block and logs the message into console. 
 
-let weather = "sun";
+/*let weather = "sun";
 
 if ( weather === "sun" ) {
     console.log("lets go swimming!")
@@ -17,4 +17,4 @@ if ( weather === "sun" ) {
     console.log("lets go sledding!")
 } else {
     console.log("its gonna be a lazy day")
-}
+}*/

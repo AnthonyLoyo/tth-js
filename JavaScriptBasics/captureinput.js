@@ -5,5 +5,5 @@
 // can call uopn and or use.
 
 // Example: 
-// const name = prompt("what is your name?");
-// console.log(name);
+/*const name = prompt("what is your name?");
+console.log(name);*/
