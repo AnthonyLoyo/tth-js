@@ -88,5 +88,3 @@ const secondsAlive = secondsPerDay * daysPerYear * yearsAlive;
 
 console.log(`Ive been alive for more than ${secondsAlive} seconds`)*/
 
-
-// -----------------------------------------------------------------------
