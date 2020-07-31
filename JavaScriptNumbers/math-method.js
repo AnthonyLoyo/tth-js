@@ -4,7 +4,7 @@
 // rounds them to the nearest intergers.
 
 // Example:
-/*console.log(Math.round(44.2));*/
+console.log(Math.round(44.2));
 
 // Example of Math.random()
 // Math.random() reurns a random floating point number between 0-1
@@ -28,7 +28,7 @@ console.log(Math.random() * 6);
 // it will return that value
 
 // Example:
-console.log(Math.floor(3.8));
+console.log(Math.floor(0.8));
 
 
 // Example of Math.ceil()
@@ -37,18 +37,21 @@ console.log(Math.floor(3.8));
 // it will return that value
 
 // Example:
-console.log(Math.ceil(3.2));
+console.log(Math.ceil(0.2));
 
 
 // Example of creating whole random numbers
 // We take Math.floor() and put Math.random() inside its paranthesis.
 // inside the paranthesis of Math.floor() we multiply Math.random() 
-// by 6. This in turn works rom inside out, esentually we recieve
+// by 6. This in turn works from inside out, esentually we recieve
 // a floating point number from Math.radom(), we multiply that number 
 // by 6, then we round that number down to get a whole interger.
+// and add 1 to it so instead of it returning a number from 0 - 5
+// now it returns a number from 1 - 6. 
+// just use Math.floor dont use Math.ceil().
 
 // Example: 
-console.log( Math.floor(Math.random() *6) );
+console.log( Math.floor(Math.random() *6) + 1);
 
 
 
