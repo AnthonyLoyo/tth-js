@@ -1,4 +1,3 @@
-
 // collect input from a user 
 
 // convert the input to a number 
@@ -71,5 +70,51 @@ if ( highNumber ) {
     console.log("You need provide a number, try again!")
 }*/
 
-// next exercise you mjust enter both numbers for random number to be
-// in between in
+
+
+/*-------------------------------------------------------------------------*/
+
+
+// TASK
+// In this exercise we must collect user input again but this time.
+// our random nu ber must be between their selected number and their 
+// second selected number. also gonna run a conditional statement because
+// guil did it in his last example.
+
+
+// Loyo Solution: incomplete - it can generate only between 1 - 9
+// it can not generate a random number between 10 and beyond..
+
+/*let firstNumber = prompt("Please select your first number!");
+
+let secondNumber = prompt("Please select your second number!");
+
+firstNumber = +firstNumber;
+
+secondNumber = +secondNumber;
+
+if( firstNumber && secondNumber) {
+    let randomNumber = Math.floor(Math.random(firstNumber) * secondNumber) + 1;
+    console.log(`${randomNumber} is a number between ${firstNumber} and ${secondNumber}!`)
+} else {
+    console.log("try again")
+}*/
+
+
+// Guils Example:
+
+const inputLow = prompt('Please provide your lowest number')
+
+const inputHigh = prompt('Please provide your highest number');
+
+const lowNumber = parseInt(inputLow);
+
+const highNumber = parseInt(inputHigh);
+
+if(highNumber && lowNumber) {
+    const randomNumber = Math.floor( Math.random() * (highNumber - lowNumber + 1) ) + lowNumber;
+
+    console.log(`${randomNumber} is a random number between ${lowNumber} and ${highNumber}.`);
+} else {
+    console.log("You need to provide two number, try again.")
+}
