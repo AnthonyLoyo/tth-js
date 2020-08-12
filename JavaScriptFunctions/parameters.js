@@ -4,20 +4,20 @@
 // in such cases, when you decalre a function you give it parameters.
 // inside the functions pranthesis, the parameters are placed and
 // act like variables.
-//  Inside the functions code block you pass the same parameter names, 
+// Inside the functions code block you pass the same parameter names, 
 // think of em almost like a place holder,
 // you pass value to these parameters by calling the function and placing
 // the value/arguments inside the functions paranthesis
 
 // Example:
 
-           /*fn.name( param1, param2)*/
-    function getArea( width, height ){
-             /*param1 * param2*/ 
-        return width * height;
-    }
-  /*fn.name(pv1, pv2) */
-    getArea(3, 5);
+//          /*fn.name( param1, param2)*/
+//   function getArea( width, height ){
+//            /*param1 * param2*/ 
+//       return width * height;
+//   }
+// /*fn.name(pv1, pv2) */
+//   getArea(3, 5);
 
 
 /* ----------------------------------------------------------------*/
@@ -39,11 +39,37 @@
 // NOTE: this is really dope because the code can perform
 // without knowing the exact details in advance.
 
-function getRandomNumber(upper) {
+/*function getRandomNumber(upper) {
     const randomNumber = Math.floor( Math.random() * upper ) + 1;
     return randomNumber;
 };
 
 console.log( getRandomNumber(6) );
 console.log( getRandomNumber(20) );
-console.log( getRandomNumber(50) );
+console.log( getRandomNumber(50) );*/
+
+
+/* --------------------------------------------------------------------- */
+
+// Function wityh multiple parameters
+// function can recieve multiple parameters by seperating them with
+// a cama when you decalre them in a functions paranthesis
+// and you can pass them their value when you call the function
+// and pass it two values seperated by caamas
+
+// Example: 
+
+/*function goToCoffeeShop(drink, pastry){
+  alert(`Your ${drink} and ${pastry} on the way`);
+}
+goToCoffeeShop(`Espresso`, `Crouissant`);*/
+
+
+/* ------------------------------------------------------------------ */
+
+// running a function with three parameters
+/*function getArea(width, length, unit) {
+  const area = width * length;
+  return `${area} ${unit}`;
+}
+console.log(getArea(10, 20, 'sq ft') );*/
