@@ -67,9 +67,82 @@ goToCoffeeShop(`Espresso`, `Crouissant`);*/
 
 /* ------------------------------------------------------------------ */
 
+
 // running a function with three parameters
 /*function getArea(width, length, unit) {
   const area = width * length;
   return `${area} ${unit}`;
 }
 console.log(getArea(10, 20, 'sq ft') );*/
+
+
+/* ------------------------------------------------------------------- */
+
+
+// A function has its own scope, kinda like its own little universe.
+// in the example below the var person holds a value of Meg, we tried to 
+// rewrite its value by creating the same variable outside the function but
+// with the value of Lee. 
+// since the var with the value of Lss is outside the functions scope
+// the function sees it but doesnt take its value for its own.
+// hense returning in the alert Hi, Meg.
+
+/*let person = "Lee";
+
+function greeting() {
+  let person = 'Meg';
+  alert(`Hi, ${person}!`);
+}
+
+function greeting2() {
+  let person = 'Robert';
+  alert(`Good Morning, ${person}!`);
+}
+
+
+greeting();
+
+alert(`Hi, ${person}`)
+
+greeting2();*/
+
+
+/* --------------------------------------------------------------------- */
+
+// there is one way for the function to change the value of the
+// global variable from within its function scope
+// this is done by remving any variable name from it.
+// it is not recomended you do this because it can really confuse the
+// program
+
+let person = "Lee";
+
+function greeting() {
+  person = 'Meg';
+  alert(`Hi, ${person}!`);
+}
+
+
+
+greeting();
+
+alert(`Hi, ${person}`)
+
+
+/* ------------------------------------------------------------------- */ 
+
+// there is one more way to write a function this is called a 
+// function expression
+// a function expression in a way is storing a function in var
+// a function with no function name after the function key word 
+// is called a anonymous function
+
+
+
+
+const getRandomNumber = function(upper) {
+    const randomNumber = Math.floor( Math.random() * upper ) + 1;
+    return randomNumber;
+};
+
+getRandomNumber(10);
