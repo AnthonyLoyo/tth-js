@@ -3,79 +3,108 @@
 
 /* ------------------------------------------------------------------ */
 
-// Example 1: funtion declaration
-// a fucntion declaration defines a function using the function keyword
-// followed by the name of the function
+// function decalration
+// defines a function using the function keyword followed by the 
+// name of the function
 
-function square(x){
+// Example:
+/*function square(x) {
+    return x * x;
+} 
+console.log( square(8) );*/
+
+// function expression / annonymous function
+// is a function thats assigned to a variable 
+
+// Example:
+/*const circle = function(x) {
     return x * x;
 }
-console.log( square(5) );
+console.log( circle(6) );*/
 
-/* ------------------------------------------------------------------ */ 
+// arrow function expression
 
-// Example 2: funtion expression
-// is also known as annonymos function, a function without a name
-// and is normally contained within a varibale  
-
-const triangle = function(x){
-    return x * x;
-};
-console.log( triangle(6) );
-
-/* ------------------------------------------------------------------- */ 
-
-// Example 3: arrow function expression
-// the basic syntax for a arrow function has you ommit the function name 
-// and place a arrow after the parathesis,
-// NOTE: arrow functions mostly behave like function expression
-// arrow function expressions are not houister or lifted to the top of 
-// their scope by the JS Engine, htey load only when JS Engine reaches
-// the line of code they are on, so if you try  to call a JS Expression
-// before its defined youll get a error
-
-const circle = (x) => {
+/*const triangle = (x) => {
     return x * x;
 }
-console.log( circle(7) );
+console.log( triangle(5) );*/
 
-/* ------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------- */
 
-// converting function decloration to a arrow funtion
-
-
-
-// function decloration
+// Converting functions to arrow functions
 
 /*function getRandomNumber() {
-    const randomNumber = Math.floor( Math.random() * 6) + 1;
+    const randomNumber = Math.floor(Math.random() * 6 ) + 1;
     return randomNumber;
 }
 console.log( getRandomNumber() );*/
 
 
-// arrow function
-
-/*const getRandomNumber = (upper) => {
-    const randomNumber = Math.floor( Math.random() * upper ) + 1;
-    return randomNumber; 
-};
-console.log( getRandomNumber(8) );*/
-
-
-
-// funtion declaration
-
-/*function getArea(width, length, unit) {
-    const area = width * length;
-    return `${area} ${unit}`
+/*const getRandomNumber = () => {
+    const randomNumber = Math.floor(Math.random() * 6 ) + 1;
+    return randomNumber;
 }
-console.log(getArea(9, 9, 'sq ft'));*/
+console.log(getRandomNumber() );*/
 
-// arrow functopn
+/* --------------------------------------------------------------- */
+
+// Converting functions with parameters to arrow functions with paramaters
+
+/*function getArea( width, length, unit){
+    const area = width * length;
+    return `${area} ${unit}`;
+}
+console.log( getArea(8,8, sq unit) )*/
+
 
 /*const getArea = (width, length, unit) => {
     const area = width * length;
     return `${area} ${unit}`;
+};
+    
+console.log( getArea( 5, 5, 'sq unit') );*/
+
+/* -------------------------------------------------------------- */
+
+// When you pass a function with a paramater but fail to assign a
+// value in the function call you will get a undefined message.
+// to prevent that from happeneing you can assign a default 
+// paramater value inside the function defintion.
+// the way this is done is by assiging a value directly to your 
+// paramater inside the paranthesis. this is called assiging a
+// default value. if you call your funtion
+// and give the function call a value, then the the function call
+// value over writes the default paramater value.
+
+
+// EXAMPLE with no value given to parameter but using default value
+/*function sayGreeting( name = 'student') {
+    return `Good Morning ${name}!`;
 }
-console.log( getArea(9, 9, 'sq ft') );*/
+console.log( sayGreeting() );*/
+
+// EXAMPLE of default value being overwritten by function call value 
+/*function sayGreeting( name = 'student') {
+    return `Good Morning ${name}!`;
+}
+console.log( sayGreeting('Maria') );*/
+
+/* -------------------------------------------------------------- */
+
+// you can pass multiple parameters with a default value.
+// all you have to do is separate them with a comma.
+// you may run iinto a issue when assiging the paramaters value in 
+// the function call. since you are using two paramters, when you
+// assign a value via the function call you automatically assign
+// value in order first to first and second to second.
+// if you needed to leave the first paramater value as is and only 
+// assign value to the second paramater via the function call
+// you can pass the first value in the function call ass 
+// unassigned, this will leave the first value as is and will let you
+// skipt to the second paramter and assign it its value via 
+// the function call
+
+function sayGreeting( greeting = 'Good Morning' ,name = `Student` ) {
+    return `${greeting} ${name}!`;
+}
+console.log( sayGreeting( undefined , 'Guil') );
