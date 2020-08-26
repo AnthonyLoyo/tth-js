@@ -104,7 +104,32 @@ console.log( sayGreeting('Maria') );*/
 // skipt to the second paramter and assign it its value via 
 // the function call
 
-function sayGreeting( greeting = 'Good Morning' ,name = `Student` ) {
+/*function sayGreeting( greeting = 'Good Morning' ,name = `Student` ) {
     return `${greeting} ${name}!`;
 }
-console.log( sayGreeting( undefined , 'Guil') );
+console.log( sayGreeting( undefined , 'Guil') );*/
+
+/* ------------------------------------------------------------------ */
+
+
+/**
+ * Returns a random number between two numbers
+ * 
+ * @param {number} lower - the lowest number value
+ * @param {number} upper - the highest number value
+ * @return {number} - the random number value 
+ * 
+ */
+
+function getRandomNumber(lower, upper = 100) {
+    if( isNaN(lower) || isNaN(upper) ) {
+        throw Error('Both arguments must be numbers.');
+    }
+    return Math.floor(Math.random() * (upper - lower + 1)) + lower;
+}
+console.log(getRandomNumber(1, 5));
+console.log(getRandomNumber(10, 30));
+console.log(getRandomNumber(5, "twenty five"));
+
+
+// call the function and pass it different values
